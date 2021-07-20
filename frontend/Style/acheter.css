@@ -2,8 +2,9 @@
 *{
     font-family: 'poppins', sans-serif;
 }
-
-
+body{
+    background-color: rgb(235, 235, 235);
+}
 #banner{
     position: relative;
     width: 100%;
@@ -15,18 +16,6 @@
     background-size: cover;
     background-repeat: no-repeat;
    
-}
- .content{
-   width: 50%;
-    text-align: center;
-}
-#banner .content h2{
-    font-size: 3em;
-    color: #FFF;
-}
-#banner .content p{
-    font-size: 1em;
-    color: #FFF;
 }
 .btn{
     font-size: 1em;
@@ -53,8 +42,7 @@
 
 
 .cars .card {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    
+    margin: 30px;
 }
 
 .bg-light{
@@ -81,8 +69,10 @@
   
     border-color: rgba(255, 255, 255);
 }
-
-/*page contact*/
-.contact{
-    height: 94vh;
+.filter{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+ color: white;
+    border-radius: 15px;
 }
