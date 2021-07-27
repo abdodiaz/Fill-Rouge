@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    fetch("https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "00e63b32b6msh191c5d269edfa77p1f185cjsn6196a1b96a90",
+		"x-rapidapi-host": "cars-by-api-ninjas.p.rapidapi.com"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+</script>
