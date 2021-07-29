@@ -4,28 +4,19 @@ class Contact
 {
     function index()
     {
-        $obj = new ContactModel();
-        $value = $obj->GetAll();
-        foreach ($value as $val) {
-         http_response_code(201);
-        echo json_encode(["id" => $val["Id"],"name" => $val["Name"],"Email" => $val["Email"], "Password" => $val["Password"],"Role"=>$val["Role"]]);
-        }
+        require_once __DIR__ ."/../View/contact.php";
     }
     function create()
     {
-        $data = json_decode(file_get_contents("php://input"));
+        if(isset($_POST['sub'])) 
+        {
         $obj = new ContactModel();
-    
-        $obj->setNom($data->Nom);
-        $obj->setPrenom($data->Prenom);
-        $obj->setEmail($data->Email);
-        $obj->setBesoin($data->Besoin);
-        $obj->setMessage($data->Message);
+        $obj->setNom($_POST['name']);
+        $obj->setPrenom($_POST['surname']);
+        $obj->setEmail($_POST['email']);
+        $obj->setBesoin($_POST['need']);
+        $obj->setMessage($_POST['message']);
         $obj->create();
-    }
-    function delete(){
-        $data = json_decode(file_get_contents("php://input"));
-        $obj = new ContactModel();
-        $obj->setId($data->Id);
+        }
     }
 }

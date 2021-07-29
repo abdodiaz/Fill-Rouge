@@ -4,12 +4,7 @@ class Vender
 {
     function index()
     {
-        $obj = new VendeurmsgModel();
-        $value = $obj->GetAll();
-        foreach ($value as $val) {
-         http_response_code(201);
-         echo json_encode(["id" => $val["Id"],"name" => $val["Name"],"Email" => $val["Email"], "Password" => $val["Password"],"Role"=>$val["Role"]]);
-        }
+        require_once __DIR__ ."/../View/vendre.php";
     }
     function create()
     {
