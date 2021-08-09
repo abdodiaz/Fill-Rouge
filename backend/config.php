@@ -15,5 +15,6 @@ class Config{
             die();
         }
         return null;
+        
     }
 }

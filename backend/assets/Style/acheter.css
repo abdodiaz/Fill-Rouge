@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+#banner{
+    position: relative;
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("http://localhost/Fill-Rouge/backend/assets/richard-biros-pXFDctQsUys-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.btn{
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    background: hsl(51, 100%, 50%);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+.nav{
+    margin-left: 25%;
+}
+.sect2 h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.cars .card {
+    margin: 30px;
+    box-shadow: 0px 8px 24px  rgba(0, 0, 0, 0.15);
+    
+}
+
+.bg-light{
+    background: #45526e !important;
+}
+.logo{
+  margin-left: 3%;
+  font-size: 2em;
+ color: white !important;
+}
+.logo span{
+    color: hsl(51, 100%, 50%) !important;
+}
+.nav-link{
+    color: white !important; 
+}
+.nav-link.active{
+    color:  hsl(51, 100%, 50%) !important; 
+}
+.menu{
+    color: white;
+}
+.navbar-light .navbar-toggler {
+  
+    border-color: rgba(255, 255, 255);
+}
+.filter{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+ color: white;
+    border-radius: 15px;
+}

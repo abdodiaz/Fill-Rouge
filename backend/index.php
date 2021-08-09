@@ -45,4 +45,5 @@ if (isset($params[0]) & !empty($params[0]))
 	require_once "controller/Home.php";
 	$obj=new Home();
 	$obj->index();
+	
 }

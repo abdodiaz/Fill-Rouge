@@ -17,6 +17,7 @@ class Contact
         $obj->setBesoin($_POST['need']);
         $obj->setMessage($_POST['message']);
         $obj->create();
+        
         }
     }
 }
