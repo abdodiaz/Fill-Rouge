@@ -16,8 +16,20 @@
 <body onload="ativeclass()">
     <!-- navbar -->
     <?php
-require_once __DIR__."/../Includes/Head.php";
+require_once __DIR__."/../Includes/Head.php";?>
+<?php 
+if(isset($_SESSION["contact"]))
+{
+  unset($_SESSION["contact"]);
 ?>
+  <div class="alert alert-primary d-flex align-items-center" role="alert">
+  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+  <div>
+    An example alert with an icon
+  </div>
+</div>
+<?php  }?>
+
   <section class="contact">
     <div class="container">
       <div class=" text-center mt-5 ">
@@ -43,7 +55,8 @@ require_once __DIR__."/../Includes/Head.php";
                         <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="form-group"> <label for="form_need">Please specify your need *</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                        <div class="form-group"> <label for="form_need">Please specify your need *</label>
+                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
                             <option value="" selected disabled>--Select Your Issue--</option>
                             <option>Request Invoice for order</option>
                             <option>Request order status</option>

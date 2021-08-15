@@ -30,37 +30,47 @@ require_once __DIR__."/../Includes/Head.php";
                 Nous nous occupons de la procédure de vente</p>
             </div>
             <div class="col-md-5 frms">
-                <form method="Post" action="Vendre/create">
+                <form method="Post" action="Vender/create">
                     <div class="mrjn"></div>
                     <div class="row" >
                         <h1>Vendre Voiture</h1>
                     </div>
                     <div class="row">
                         <div class="col my-4">
-                            <input type="text" class="form-control" placeholder="Prénom">
+                            <input type="text" class="form-control" name="Prenom" placeholder="Prénom">
                         </div>
                         <div class="col  my-4">
-                            <input type="text" class="form-control" placeholder="Nom">
+                            <input type="text" class="form-control"name="Nom" placeholder="Nom">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col my-4">
-                            <input type="tel" class="form-control" placeholder="Telephone">
+                            <input type="tel" class="form-control" name="Tele" placeholder="Telephone">
                         </div>
                         <div class="col my-4">
-                            <select class="form-control">
+                            <select class="form-control" name="Ville">
                                 <option>Ville</option>
+                                <option value="sidi bennour">Sidi bennour</option>
+                                <option value="Eljadida">Eljadida</option>
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col my-4" style="width: 15vh;">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="Email" placeholder="Email">
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col my-4">
+                            <input type="text" class="form-control" name="Marque" placeholder="Marque">
+                        </div>
+                        <div class="col  my-4">
+                            <input type="text" class="form-control" name="Modele" placeholder="Modele">
+                        </div>
+                        </div>
+                    <div class="row">
                         <div class="col my-4 d-flex justify-content-center">
-                            <button class="btn " type="submit">Suivant</button>
+                            <button class="btn" name="sub" type="submit">Envoyer</button>
                         </div>
                     </div>
             </div>

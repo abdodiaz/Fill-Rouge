@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../model/ContactModel.php";
+session_start();
 class Contact
 {
     function index()
@@ -17,7 +18,8 @@ class Contact
         $obj->setBesoin($_POST['need']);
         $obj->setMessage($_POST['message']);
         $obj->create();
-        
+        $_SESSION["contact"]=true;
+        header("Location:http://localhost/Fill-Rouge/backend/contact ");
         }
     }
 }

@@ -8,15 +8,17 @@ class Vender
     }
     function create()
     {
-        $data = json_decode(file_get_contents("php://input"));
+        if(isset($_POST["sub"])){
         $obj = new VendeurmsgModel();
-        $obj->setNom($data->Nom);
-        $obj->setPrenom($data->Prenom);
-        $obj->setEmail($data->Email);
-        $obj->setTel($data->Tel);
-        $obj->setVille($data->Ville);
-        $obj->setMarque($data->Marque);
-        $obj->setModel($data->Model);
+        $obj->setNom($_POST["Nom"]);
+        $obj->setPrenom($_POST["Prenom"]);
+        $obj->setEmail($_POST["Email"]);
+        $obj->setTel($_POST["Tele"]);
+        $obj->setVille($_POST["Ville"]);
+        $obj->setMarque($_POST["Marque"]);
+        $obj->setModel($_POST["Modele"]);
         $obj->create();
+        }
+        
     }
 }

@@ -1,0 +1,15 @@
+.forms{
+    position: absoloute;
+    margin: auto;
+    padding: 12vh 5vh ;
+    width: 100vh;
+    align-items: center;
+    background-color: grey;
+    color: black;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+
+}
+.sub{
+    margin-top: 30px;
+}

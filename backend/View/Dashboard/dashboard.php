@@ -30,7 +30,7 @@
           <a href="#"><span class="fa fa-home mr-3"></span> Acceuil</a>
         </li>
         <li>
-          <a href="#"><span class="fa fa-user mr-3"></span>Vendeur</a>
+          <a href="vendeurdashboard"><span class="fa fa-user mr-3"></span>Vendeur</a>
         </li>
         <li>
           <a href="#"><span class="fa fa-sticky-note mr-3"></span>
@@ -47,7 +47,13 @@
         <li>
           <a href="#"><span class="fa fa-paper-plane mr-3"></span> Contact</a>
         </li>
+        <li>
+          <a href="logout"  class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+        </li>
       </ul>
+      
     </nav>
     <!-- Page Content  -->
     <div id="content" class="p-4 p-md-5 pt-5">
